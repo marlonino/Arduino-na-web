@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <title>Arduinoweb</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class ="jumbotron">
+
+        <h1 class="display-3">Arduino na Web</h1>
+        <p class="lead">integracao arduino web via Serial</p>
+        <hr class="my-2">
+        <div class="conteiner">
+            <div class="row">
+                <div class="col-xl-11">
+                    <canvas id="MeuGrafico" height="120"></canvas>
+                </div>
+                <div class="col-md-1">
+
+                    <button class="btn btn-sucess" value="a">
+                        Acender Led
+                    </button>
+                    <p>
+
+                    </p>
+                    <button class="btn btn-danger" value="b">
+                        Apagar Led
+                    </button>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+</body>
+<script src="grafico.js"></script>
+<script src="btns.js"></script>
+
+</html>
